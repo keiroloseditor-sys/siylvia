@@ -1,0 +1,6 @@
+{
+  "name": "رسالة حب واعتذار لسيلفيا",
+  "description": "موقع رومانسي خاص ومميز للاعتذار والتعبير عن الحب الصادق لسيلفيا.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

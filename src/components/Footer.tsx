@@ -1,0 +1,25 @@
+import React from 'react';
+import { Heart } from 'lucide-react';
+
+export const Footer: React.FC = () => {
+  return (
+    <footer className="mt-20 border-t border-rose-200/60 bg-white/60 backdrop-blur-xs py-8 px-4 text-center">
+      <div className="max-w-4xl mx-auto flex flex-col items-center justify-center gap-3">
+        <div className="flex items-center justify-center gap-2 text-rose-500">
+          <Heart className="w-5 h-5 fill-rose-500 animate-pulse text-rose-500" />
+          <Heart className="w-6 h-6 fill-rose-600 text-rose-600 animate-bounce" />
+          <Heart className="w-5 h-5 fill-rose-500 animate-pulse text-rose-500" />
+        </div>
+
+        {/* User requested exact line: "صمم هذا الموقع بواسطة كل الصفاء بكل حب لسيلفيا" */}
+        <p className="text-base sm:text-lg font-bold font-cairo text-slate-800 tracking-wide">
+          صمم هذا الموقع بواسطة كل الصفاء بكل حب لسيلفيا
+        </p>
+
+        <p className="text-xs text-slate-400">
+          جميع الحقوق محفوظة للحب الصادق والقلوب الوفية · سيلفيا في القلب دائماً
+        </p>
+      </div>
+    </footer>
+  );
+};

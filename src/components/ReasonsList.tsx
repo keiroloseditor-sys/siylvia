@@ -30,41 +30,41 @@ export const ReasonsList: React.FC = () => {
   ];
 
   return (
-    <section id="reasons" className="max-w-5xl mx-auto px-4 sm:px-6 my-16">
-      <div className="bg-gradient-to-br from-rose-900 to-rose-950 text-white rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden">
+    <section id="reasons" className="max-w-5xl mx-auto px-3 sm:px-6 my-10 sm:my-16">
+      <div className="bg-gradient-to-br from-rose-900 to-rose-950 text-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12 shadow-xl relative overflow-hidden">
         {/* Subtle decorative glow */}
         <div className="absolute top-0 right-0 w-80 h-80 bg-rose-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-pink-500/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10">
-          <div className="text-center max-w-2xl mx-auto mb-12">
+          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
             <span className="text-xs font-bold text-rose-300 tracking-wider">من القلب للقلب</span>
-            <h3 className="text-3xl sm:text-4xl font-black font-cairo mt-2 text-white">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-black font-cairo mt-2 text-white">
               ليه ما أقدرش أستغنى عنك يا سيلفيا؟
             </h3>
-            <p className="text-rose-200/80 text-sm sm:text-base mt-2 font-amiri">
+            <p className="text-rose-200/80 text-xs sm:text-sm md:text-base mt-2 font-amiri">
               أسباب كتير أوي، بس دي أكتر حاجات بتفكرني إن حياتي من غيرك مستحيلة
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             {reasons.map((reason) => {
               const Icon = reason.icon;
               return (
                 <div
                   key={reason.num}
-                  className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors"
+                  className="bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:bg-white/10 transition-colors"
                 >
-                  <div className="flex items-start gap-4">
-                    <span className="text-2xl font-mono text-rose-400 font-bold shrink-0">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <span className="text-xl sm:text-2xl font-mono text-rose-400 font-bold shrink-0">
                       {reason.num}
                     </span>
                     <div>
-                      <h4 className="text-lg font-bold font-cairo text-white mb-2 flex items-center gap-2">
+                      <h4 className="text-base sm:text-lg font-bold font-cairo text-white mb-1.5 sm:mb-2 flex items-center gap-2">
                         <span>{reason.title}</span>
                         <Icon className="w-4 h-4 text-rose-400 shrink-0" />
                       </h4>
-                      <p className="text-sm text-rose-100/80 font-amiri leading-relaxed">
+                      <p className="text-xs sm:text-sm text-rose-100/80 font-amiri leading-relaxed">
                         {reason.desc}
                       </p>
                     </div>

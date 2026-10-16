@@ -28,11 +28,11 @@ export const LovePromises: React.FC = () => {
   return (
     <section id="promises" className="max-w-5xl mx-auto px-3 sm:px-6 my-10 sm:my-16">
       <div className="text-center mb-8 sm:mb-10">
-        <span className="text-xs font-bold text-rose-600 tracking-wider">عهود من القلب</span>
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-black font-cairo text-slate-900 mt-2">
+        <span className="text-xs sm:text-sm font-black text-rose-700 tracking-wider">عهود من القلب</span>
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-black font-cairo text-slate-950 mt-2">
           وعودي الصادقة ليكي يا سيلفيا
         </h3>
-        <p className="text-slate-600 text-xs sm:text-sm md:text-base mt-2 max-w-lg mx-auto">
+        <p className="text-slate-800 text-sm sm:text-base md:text-lg mt-2 max-w-lg mx-auto font-medium">
           مش مجرد كلام على ورق، دي وعود محفورة في قلبي وملتزم بيها قدامك
         </p>
       </div>
@@ -43,16 +43,16 @@ export const LovePromises: React.FC = () => {
           return (
             <div
               key={idx}
-              className="bg-white/85 backdrop-blur-xs border border-rose-100 rounded-2xl p-4 sm:p-6 shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between"
+              className="bg-white border-2 border-rose-200 rounded-2xl p-5 sm:p-6 shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between"
             >
               <div>
-                <div className="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center mb-3 sm:mb-4">
-                  <Icon className="w-5 h-5 text-rose-600 shrink-0" />
+                <div className="w-11 h-11 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center mb-3 sm:mb-4 border border-rose-300">
+                  <Icon className="w-6 h-6 text-rose-600 shrink-0" />
                 </div>
-                <h4 className="text-base sm:text-lg font-bold font-cairo text-slate-900 mb-1.5 sm:mb-2">
+                <h4 className="text-lg sm:text-xl font-black font-cairo text-slate-950 mb-2">
                   {promise.title}
                 </h4>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-amiri md:text-base">
+                <p className="text-sm sm:text-base text-slate-800 leading-relaxed font-amiri font-semibold">
                   {promise.desc}
                 </p>
               </div>

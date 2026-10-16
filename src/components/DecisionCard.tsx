@@ -154,18 +154,18 @@ export const DecisionCard: React.FC<DecisionCardProps> = ({ onAgreedChange }) =>
 
           {/* Buttons Area: Bold, High Contrast, Super Legible */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 pt-3 pb-2 min-h-[120px]">
-            {/* Yes / Agreement Button - Bold, Pop, Clear Text */}
+            {/* Yes / Agreement Button - Bold Jet-Black Text, High-Contrast Pop */}
             <button
               onClick={handleAgree}
               style={{
                 transform: `scale(${agreeScale})`,
                 transition: 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
               }}
-              className="w-full sm:w-auto px-7 sm:px-9 py-4 sm:py-4.5 bg-gradient-to-r from-red-600 via-rose-600 to-rose-700 hover:from-red-700 hover:to-rose-800 text-white font-black font-cairo text-lg sm:text-xl md:text-2xl rounded-2xl shadow-xl shadow-rose-600/40 hover:shadow-rose-600/60 border-2 border-white ring-4 ring-rose-300/60 cursor-pointer flex items-center justify-center gap-3 active:scale-95 whitespace-nowrap z-10"
+              className="w-full sm:w-auto px-7 sm:px-9 py-4 sm:py-4.5 bg-white hover:bg-rose-50 text-black font-black font-cairo text-lg sm:text-xl md:text-2xl rounded-2xl shadow-xl shadow-rose-500/30 hover:shadow-rose-500/50 border-4 border-rose-600 ring-4 ring-rose-200/80 cursor-pointer flex items-center justify-center gap-3 active:scale-95 whitespace-nowrap z-10"
             >
-              <Heart className="w-6 h-6 fill-white text-white shrink-0 animate-pulse" />
-              <span className="tracking-wide drop-shadow-md">أوافق وهرجع لك ❤️</span>
-              <Sparkles className="w-5 h-5 text-yellow-300 shrink-0" />
+              <Heart className="w-6 h-6 fill-rose-600 text-rose-600 shrink-0 animate-pulse" />
+              <span className="text-black font-black font-cairo tracking-wide">أوافق وهرجع لك ❤️</span>
+              <Sparkles className="w-5 h-5 text-amber-500 shrink-0" />
             </button>
 
             {/* No / Refusal Button with dynamic labels - High Contrast */}
@@ -201,8 +201,8 @@ export const DecisionCard: React.FC<DecisionCardProps> = ({ onAgreedChange }) =>
             </div>
           </div>
 
-          <p className="text-xs sm:text-sm font-semibold text-slate-600 mt-6">
-            (الزرار الأحمر معمول بكل حب عشانك.. اضغطي عليه وشوفي المفاجأة)
+          <p className="text-xs sm:text-sm font-bold text-slate-700 mt-6">
+            (اضغطي على &ldquo;أوافق وهرجع لك&rdquo; وشوفي المفاجأة بكل حب ❤️)
           </p>
         </div>
       ) : (
